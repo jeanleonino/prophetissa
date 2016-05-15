@@ -1,0 +1,35 @@
+{
+  "name": "prophetissa",
+  "version": "0.0.1",
+  "description": "A simple css framework",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeanleonino/prophetissa"
+  },
+  "bugs": {
+    "url": "https://github.com/jeanleonino/prophetissa/issues"
+  },
+  "main": "server.js",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "node server.js",
+    "dev": "npm run watch-server & npm run watch-sass",
+    "build": "gulp sass",
+    "watch-server": "nodemon server.js",
+    "watch-sass": "gulp watch-sass"
+  },
+  "author": "Jean <jeanleonino@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.12.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.1",
+    "nodemon": "^1.9.2",
+    "normalize.css": "^4.1.1"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
