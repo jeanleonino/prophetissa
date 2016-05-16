@@ -1,0 +1,22 @@
+/*******************************
+ * TYPOGRAPHY
+ *******************************/
+
+$typography-header-font: "Lato";
+$typography-header-color: #2e2e2e;
+$typography-line-height: ;
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $typography-header-font;
+  color: $typography-header-color;
+}
+
+p {
+  margin: 0 0 ($line-height-computed / 2);
+}
+
+
+.text-center {
+  text-align: center;
+}

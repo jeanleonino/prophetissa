@@ -1,0 +1,20 @@
+@import "partials";
+
+// Custom theme
+
+.pr-header {
+  margin-right: 10px;
+  margin-left: 10px;
+
+  img {
+    display: block;
+    margin: auto;
+  }
+}
+
+.pr-footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+}
