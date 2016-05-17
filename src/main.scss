@@ -3,18 +3,50 @@
 // Custom theme
 
 .pr-header {
+  margin-top: 60px;
   margin-right: 10px;
   margin-left: 10px;
+  padding-bottom: 60px;
 
   img {
     display: block;
     margin: auto;
   }
+
+  h1 {
+    margin: 0;
+  }
 }
 
 .pr-footer {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #161616;
+  color: #e3e3e3;
   padding: 20px;
   margin-top: 20px;
+}
+
+
+.pr-subtitle {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &:before,
+  &:after {
+    flex-grow: 1;
+    height: 1px;
+    content: '\a0';
+    background-color: #ddd;
+    position: relative;
+    top: 0.5em;
+  }
+}
+
+.pr-content {
+  padding-bottom: 80px;
+}
+
+.pr-container {
+  background-color: #e3e3e3;
 }

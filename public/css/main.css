@@ -1,14 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300|Merriweather:400,700,300);
-body {
-  font-family: "Merriweather"; }
-
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700,300);
+/*
+ * Grid System
+ */
 .container {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1100px; }
+  max-width: 1200px; }
 
-.fluid {
+.full {
   display: block;
   max-width: 100%; }
 
@@ -18,26 +18,63 @@ body {
 /*******************************
  * TYPOGRAPHY
  *******************************/
+body {
+  font-family: "Lora";
+  color: #5b5b5b;
+  font-weight: 400; }
+
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Lato";
-  color: #2e2e2e; }
+  font-family: "Lora";
+  color: #5b5b5b; }
 
 p {
-  margin: 0 0 10px; }
+  margin: 0 0 0.71429;
+  font-weight: 400; }
 
 .text-center {
   text-align: center; }
 
 .pr-header {
+  margin-top: 60px;
   margin-right: 10px;
-  margin-left: 10px; }
+  margin-left: 10px;
+  padding-bottom: 60px; }
   .pr-header img {
     display: block;
     margin: auto; }
+  .pr-header h1 {
+    margin: 0; }
 
 .pr-footer {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #161616;
+  color: #e3e3e3;
   padding: 20px;
   margin-top: 20px; }
+
+.pr-subtitle {
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .pr-subtitle:before, .pr-subtitle:after {
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    height: 1px;
+    content: '\a0';
+    background-color: #ddd;
+    position: relative;
+    top: 0.5em; }
+
+.pr-content {
+  padding-bottom: 80px; }
+
+.pr-container {
+  background-color: #e3e3e3; }
